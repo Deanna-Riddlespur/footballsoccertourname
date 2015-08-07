@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'soccer',
     'football',
+    'tournament',
 )
 
 MIDDLEWARE_CLASSES = (
