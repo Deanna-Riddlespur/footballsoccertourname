@@ -16,3 +16,12 @@ class Player(models.Model):
 
     def __unicode__(self):
         return u"{name} {team}".format(name=self.name, team=self.team.name)
+
+
+class Coach(models.Model):
+
+    name = models.CharField(max_length=200)
+    team = models.ForeignKey(Team)
+
+    def __unicode__(self):
+        return u"{name} {team}".format(name=self.name, team=self.team.name)
